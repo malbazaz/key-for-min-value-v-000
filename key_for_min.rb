@@ -7,7 +7,7 @@ if name_hash.length == 0
   nil 
 else 
 element = ""
-new_hash.Hash.new
+new_hash = Hash.new
 new_hash = name_hash.first
 name_hash.each do |previousk, previousv|
 name_hash.each do |key,value|
@@ -18,4 +18,5 @@ end
 end
 end 
 end 
+newkey
 end 
