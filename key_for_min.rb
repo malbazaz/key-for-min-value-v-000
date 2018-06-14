@@ -9,12 +9,9 @@ if name_hash.length == 0
   nil 
 else 
 name_hash.each do |key,value|
-  if lowestv == nil
+  if lowestv == nil || lowestv < value 
 lowestv = value 
 newkey = key 
-elsif  lowestv < value 
-   newkey = key
-   lowestv = value 
 end 
 end 
 end 
