@@ -3,20 +3,18 @@
 
 
 def key_for_min_value(name_hash)
+  newkey = ""
+  lowestv = 
 if name_hash.length == 0 
   nil 
 else 
-element = ""
-new_hash = Hash.new
-new_hash = name_hash.first
-name_hash.each do |previousk, previousv|
 name_hash.each do |key,value|
- if previousv < value 
+ if lowestv < value 
    newkey = key
-   previousv = value 
-end  
-end
+   lowerstv = value 
+end 
 end 
 end 
 newkey
-end 
+end
+
