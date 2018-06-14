@@ -4,14 +4,17 @@
 
 def key_for_min_value(name_hash)
   newkey = ""
-  lowestv = 
+  lowestv = nil 
 if name_hash.length == 0 
   nil 
 else 
 name_hash.each do |key,value|
- if lowestv < value 
+  if lowestv == nil
+lowestv = value 
+newkey = key 
+elsif  lowestv < value 
    newkey = key
-   lowerstv = value 
+   lowestv = value 
 end 
 end 
 end 
